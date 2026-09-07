@@ -20,27 +20,48 @@
    ═══════════════════════════════════════════════════════════════════════════ */
 
 :root {
-  /* ── Marca ─────────────────────────────────────────────────────────────── */
-  --kt-turquoise:      #87C7E8; /* acento tomado del logo: lineas, foco, detalles; evitar texto chico encima */
-  --kt-turquoise-soft: #EAF6FC;
-  --kt-turquoise-border: #C7E6F4; /* borde sutil de tarjetas/cabeceras con acento de marca */
-  --kt-petrol:         #47556A; /* azul acero principal del wordmark, accesible con texto blanco */
-  --kt-night:          #17283A; /* paneles oscuros (kiosk, register, pagos) */
-  --kt-bg:             #FFFFFF;
-  --kt-bg-soft:        #F3F5F7;
-  --kt-ink:            #243447;
-  --kt-ink-soft:       #647184;
-  --kt-border:         #DDE4EA;
+  /* ── Marca CEK ───────────────────────────────────────────────────────── */
 
-  /* ── Paleta accesible (auditoría WCAG, ver kinetica-audit) ──────────────── */
-  --kt-teal-900: #243447; /* fondos oscuros de marca / titulares */
-  --kt-teal-700: #47556A; /* acción: botones sólidos, link activo, foco */
-  --kt-teal-500: #6CAFD4; /* acento fuerte derivado del celeste */
-  --kt-ink-mute: #909BAA; /* gris del sistema de marca */
+  /* Azul del logo — movimiento / kinesiología */
+  --kt-turquoise:        #72A9C4;
+  --kt-turquoise-soft:   #EAF4F8;
+  --kt-turquoise-border: #C9DFE9;
 
-  --kt-success:    #047857; --kt-success-bg: #ECFDF5;
-  --kt-warning:    #B45309; --kt-warning-bg: #FFFBEB;
-  --kt-danger:     #B91C1C; --kt-danger-bg: #FEF2F2;
+  /* Taupe principal del logo */
+  --kt-petrol:           #6F625B;
+
+  /* Fondo oscuro, usar solo en footer, sidebar o secciones especiales */
+  --kt-night:            #332F2C;
+
+  /* Fondos */
+  --kt-bg:               #FCFBF8;
+  --kt-bg-soft:          #F5F2EE;
+
+  /* Textos */
+  --kt-ink:              #332F2C;
+  --kt-ink-soft:         #756E69;
+
+  /* Bordes */
+  --kt-border:           #E3DDD7;
+
+  /* ── Escala principal CEK ────────────────────────────────────────────── */
+
+  --kt-teal-900: #4F4742;
+  --kt-teal-700: #6F625B;
+  --kt-teal-500: #72A9C4;
+
+  --kt-ink-mute: #9B938D;
+
+  /* ── Estados ─────────────────────────────────────────────────────────── */
+
+  --kt-success:    #2F7D62;
+  --kt-success-bg: #EDF7F2;
+
+  --kt-warning:    #B7791F;
+  --kt-warning-bg: #FFF8E8;
+
+  --kt-danger:     #B54747;
+  --kt-danger-bg:  #FCEEEE;
 
   /* ── Radio de bordes — vocabulario semántico sobre la escala de Tailwind ── */
   --radius-chip: 999px;   /* rounded-full ya cubre esto, alias solo para claridad de intención */
@@ -48,7 +69,7 @@
   --radius-modal: 1.25rem;
 
   /* ── Sombras con tinte de marca (para el resto, usar shadow-sm/md/lg/xl de Tailwind) */
-  --shadow-glow-accent: 0 0 22px rgba(24, 199, 216, 0.18);
+  --shadow-glow-accent: 0 0 22px rgba(114, 169, 196, 0.18);
 
   /* ── Z-index con nombre — evita números mágicos apilados sin criterio.
      Uso: className="... z-[var(--z-modal)]" ── */
@@ -81,33 +102,37 @@
    ═══════════════════════════════════════════════════════════════════════ */
 
 @theme {
-  /* ── Marca, reexpuesta como color nativo de Tailwind (bg-primary, etc.) ── */
+  /* ── Marca CEK ─────────────────────────────────────────────────────── */
+
   --color-primary:      var(--kt-teal-700);
   --color-primary-dark: var(--kt-teal-900);
   --color-primary-soft: var(--kt-teal-500);
+
   --color-accent:       var(--kt-turquoise);
   --color-accent-soft:  var(--kt-turquoise-soft);
+
   --color-success:      var(--kt-success);
   --color-success-bg:   var(--kt-success-bg);
+
   --color-warning:      var(--kt-warning);
   --color-warning-bg:   var(--kt-warning-bg);
+
   --color-danger:       var(--kt-danger);
   --color-danger-bg:    var(--kt-danger-bg);
 
-  /* ── Escala neutra propia — incialmente igual a la escala default de
-     Tailwind (mismo hex, cero cambio visual), pero ahora vive en este
-     archivo. slate-* y gray-* del código existente apuntan acá abajo. ── */
-  --color-neutral-50:  #f8fafc;
-  --color-neutral-100: #f1f5f9;
-  --color-neutral-200: #e2e8f0;
-  --color-neutral-300: #cbd5e1;
-  --color-neutral-400: #94a3b8;
-  --color-neutral-500: #64748b;
-  --color-neutral-600: #475569;
-  --color-neutral-700: #334155;
-  --color-neutral-800: #1e293b;
-  --color-neutral-900: #0f172a;
-  --color-neutral-950: #020617;
+  /* ── Neutros cálidos CEK ───────────────────────────────────────────── */
+
+  --color-neutral-50:  #FCFBF8;
+  --color-neutral-100: #F5F2EE;
+  --color-neutral-200: #E8E3DE;
+  --color-neutral-300: #D5CEC8;
+  --color-neutral-400: #AAA19A;
+  --color-neutral-500: #817870;
+  --color-neutral-600: #6F625B;
+  --color-neutral-700: #574F4A;
+  --color-neutral-800: #403A36;
+  --color-neutral-900: #332F2C;
+  --color-neutral-950: #211E1C;
 
   --color-slate-50:  var(--color-neutral-50);
   --color-slate-100: var(--color-neutral-100);
