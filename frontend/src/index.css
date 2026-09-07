@@ -67,6 +67,19 @@
   --duration-slower: 500ms;
 }
 
+/* ── Multi-cliente ────────────────────────────────────────────────────────
+   `apply_brand_theme.js` setea `data-client-brand="<nombre>"` en <html>
+   según `clienteActivo` de brand_config.js. Para un cliente nuevo con otra
+   paleta, NO tocar JS: agregar acá un bloque que sobrescriba solo los
+   --kt-* que cambian, por ejemplo:
+
+   [data-client-brand="OtroCliente"] {
+     --kt-turquoise: #FF6B00;
+     --kt-petrol:    #222222;
+     --kt-night:     #111111;
+   }
+   ═══════════════════════════════════════════════════════════════════════ */
+
 @theme {
   /* ── Marca, reexpuesta como color nativo de Tailwind (bg-primary, etc.) ── */
   --color-primary:      var(--kt-teal-700);
