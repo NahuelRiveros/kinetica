@@ -7,7 +7,7 @@ import { iconoHome } from "../../config/home_iconos.js";
 import { brandConfig } from "../../config/brand_config.js";
 import { HOME_TEXTOS_DEFAULT, HOME_VALOR } from "../../config/home_config.js";
 import HomeCarousel from "./home_carousel.jsx";
-import LogoMoovs from "../brand/logo_moovs.jsx";
+import LogoCek from "../brand/logo_cek.jsx";
 
 function contenidoASlide(c) {
   return {
@@ -42,7 +42,7 @@ export default function HomePage() {
           </div>
 
           <h1 className="kt-a2 mt-8 flex justify-center">
-            <LogoMoovs size="hero" animated />
+            <LogoCek size="hero" />
           </h1>
 
           <p className="kt-a3 mx-auto mt-7 max-w-lg text-base leading-relaxed text-[var(--kt-ink-soft)] sm:text-lg">

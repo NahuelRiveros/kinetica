@@ -2,7 +2,7 @@ import { ShieldCheck } from "lucide-react";
 import { footer_config } from "../../config/footer_config.js";
 import { moduloHabilitado } from "../../config/modulos_config.js";
 import { useAuth } from "../../auth/auth_context.jsx";
-import LogoMoovs from "../brand/logo_moovs.jsx";
+import LogoCek from "../brand/logo_cek.jsx";
 
 const ANIMATIONS = `
   @keyframes scanLine {
@@ -70,7 +70,7 @@ export default function Footer() {
               </div>
 
               <div className="flex items-baseline gap-3">
-                <LogoMoovs size="md" variant="light" />
+                <LogoCek size="md" variant="light" />
               </div>
 
               <p className="max-w-[280px] text-sm leading-7 text-slate-400">

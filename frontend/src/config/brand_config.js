@@ -10,16 +10,14 @@
  * duplicar el objeto dentro de `clientes` y setear `clienteActivo`.
  */
 export const clientes = {
-  moovs: {
-    nombre: "Moovs",
-    rubro: "Gimnasio & Kinesiología",
+  cek: {
+    nombre: "CEK",
+    rubro: "Centro de Entrenamiento y Kinesiología",
     tagline: "Move mejor. Vivi mejor.",
     clienteActivo: true,
 
     logo: {
-      tipo: "moovs-spine",
-      texto: "MOOV",
-      ariaLabel: "Moovs",
+      ariaLabel: "CEK",
     },
 
     fuentes: {
@@ -29,5 +27,5 @@ export const clientes = {
   },
 };
 
-export const clienteActivo = "moovs";
+export const clienteActivo = "cek";
 export const brandConfig = clientes[clienteActivo];

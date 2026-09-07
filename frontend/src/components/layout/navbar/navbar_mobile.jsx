@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { ChevronDown, X } from "lucide-react";
 import { useAuth } from "../../../auth/auth_context.jsx";
 import NavbarUserBox from "./navbar_userbox.jsx";
-import { LogoMoovsIcon } from "../../brand/logo_moovs.jsx";
+import { LogoCekIcon } from "../../brand/logo_cek.jsx";
 import { UI_NAVBAR as S } from "./navbar_style.js";
 
 export default function NavbarMobile({ config, open, onNavigate, onClose }) {
@@ -28,7 +28,7 @@ export default function NavbarMobile({ config, open, onNavigate, onClose }) {
       ].join(" ")}
     >
       <div className={S.mobile_drawer_header}>
-        <LogoMoovsIcon />
+        <LogoCekIcon />
         <button
           type="button"
           onClick={onClose}

@@ -4,7 +4,7 @@ import {
 import { brandConfig } from "./brand_config.js";
 
 // ─────────────────────────────────────────────────────────────────────────────
-// CONFIG DEL FOOTER — pensado para poder reusar Moovs en otro cliente
+// CONFIG DEL FOOTER — pensado para poder reusar CEK en otro cliente
 // cambiando solo este archivo (no footer.jsx).
 //
 // Cada módulo/acceso lleva `modulo: "gym" | "kinesiologia"` (o sin `modulo`

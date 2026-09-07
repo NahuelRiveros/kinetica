@@ -15,7 +15,7 @@ There is no test runner configured in this package. Copy `.env.example` to `.env
 
 ## Architecture
 
-This is the React frontend of "Moovs", a multi-module gym/kinesiology management SaaS. It's a Vite + React 19 SPA using React Router (data-router style, `src/app/router.jsx`), TanStack Query for server state, react-hook-form + zod for forms, Tailwind v4, and axios.
+This is the React frontend of "CEK" (Centro de Entrenamiento y Kinesiología), a multi-module gym/kinesiology management SaaS. It's a Vite + React 19 SPA using React Router (data-router style, `src/app/router.jsx`), TanStack Query for server state, react-hook-form + zod for forms, Tailwind v4, and axios.
 
 **Auth flow**: `src/auth/auth_context.jsx` (`AuthProvider`/`useAuth`) holds the logged-in user and the enabled-modules map. On mount, if a JWT exists in `localStorage` (key from `authConfig.storageKey`), it calls `/auth/me` and `/modulos/estado`. All API calls go through the shared axios instance in `src/api/http.js`, which attaches the bearer token on every request and, on a 401 response, clears the token and hard-redirects to `/login`. API modules (`src/api/*_api.js`) are thin wrappers around `http` — one file per backend resource, each function just does an axios call and returns `r.data`.
 

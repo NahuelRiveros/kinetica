@@ -8,7 +8,7 @@ import { ArrowLeft, Users, Wallet, HeartPulse } from "lucide-react";
 import InputField from "../components/ui/input_field.jsx";
 import FormError from "../components/ui/form_error.jsx";
 import WelcomeModal from "../components/acceso/welcome_modal.jsx";
-import LogoMoovs from "../components/brand/logo_moovs.jsx";
+import LogoCek from "../components/brand/logo_cek.jsx";
 
 import { useAuth } from "../auth/auth_context.jsx";
 import { authConfig } from "../config/auth_config.js";
@@ -97,7 +97,7 @@ export default function LoginPage() {
       <div className="relative z-[var(--z-content)] grid min-h-screen grid-cols-1 lg:grid-cols-2">
         <div className="hidden flex-col justify-between p-10 lg:flex xl:p-14">
           <NavLink to="/" className="inline-flex w-fit items-center">
-            <LogoMoovs size="sm" />
+            <LogoCek size="sm" />
           </NavLink>
 
           <div className="max-w-lg">
@@ -107,7 +107,7 @@ export default function LoginPage() {
             </div>
 
             <h1 className="kt-display mt-6 text-4xl font-extrabold leading-[1.12] text-slate-900 xl:text-5xl">
-              Gestioná Moovs
+              Gestioná CEK
               <br />
               desde un solo panel.
             </h1>
@@ -143,7 +143,7 @@ export default function LoginPage() {
         <div className="flex items-center justify-center p-4 sm:p-6 lg:p-10">
           <div className="w-full max-w-md">
             <div className="mb-6 flex justify-center lg:hidden">
-              <LogoMoovs size="sm" />
+              <LogoCek size="sm" />
             </div>
 
             <div className="overflow-hidden rounded-3xl border border-slate-200/70 bg-white shadow-xl shadow-slate-900/5">

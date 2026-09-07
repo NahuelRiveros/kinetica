@@ -8,7 +8,7 @@ import NavbarDesktop from "./navbar_desktop.jsx";
 import NavbarMobile from "./navbar_mobile.jsx";
 import NavbarUserBox from "./navbar_userbox.jsx";
 import { UI_NAVBAR as S } from "./navbar_style.js";
-import LogoMoovs from "../../brand/logo_moovs.jsx";
+import LogoCek from "../../brand/logo_cek.jsx";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -69,7 +69,7 @@ export default function Navbar() {
               </>
             ) : (
               <>
-                <LogoMoovs size="sm" />
+                <LogoCek size="sm" />
                 {navbar_config.brand.mostrarSubtitulo && navbar_config.brand.subtitulo && (
                   <p className={`hidden sm:block ${S.brand_subtitulo}`}>{navbar_config.brand.subtitulo}</p>
                 )}

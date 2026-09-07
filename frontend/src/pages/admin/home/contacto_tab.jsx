@@ -69,7 +69,7 @@ function ContactoFormModal({ abierto, onClose, onGuardar, contacto, guardando })
             name="href"
             register={register}
             hideMessage
-            placeholder="https://instagram.com/moovs"
+            placeholder="https://instagram.com/cek"
           />
           {(errors.label || errors.valor) && <p className="text-sm text-red-600">Completá el nombre y el valor</p>}
           <div className="flex justify-end gap-3 pt-2">

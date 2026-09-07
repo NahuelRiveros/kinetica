@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ═══════════════════════════════════════════════════════════════════════════
-   SISTEMA DE DISEÑO — MOOVS
+   SISTEMA DE DISEÑO — CEK
    ─────────────────────────────────────────────────────────────────────────
    Un solo archivo controla color, radio, sombra, z-index y duración de todo
    el frontend. Para reusar esto en otro proyecto/cliente: copiar este
@@ -159,7 +159,7 @@
   --color-gray-950: var(--color-neutral-950);
 }
 
-/* ── Moovs: fuentes (definidas en index.html via <link>, aquí solo asignamos) ── */
+/* ── CEK: fuentes (definidas en index.html via <link>, aquí solo asignamos) ── */
 .kt-display { font-family: var(--kt-font-display, 'Bricolage Grotesque', sans-serif); }
 .kt-body    { font-family: var(--kt-font-body, 'Plus Jakarta Sans', sans-serif); }
 
